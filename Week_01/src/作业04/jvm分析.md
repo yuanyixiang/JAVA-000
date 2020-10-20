@@ -52,7 +52,7 @@ PS Old Generation
 
 jmap -heap pid 
 
-![截屏2020-10-20 下午2.51.35](/Users/rd-yyx/Desktop/java/JAVA-000/JAVA-000/Week_01/src/作业01/截屏2020-10-20 下午2.51.35.png)
+![截屏2020-10-20 下午2.51.35](./parallel.png)
 
 ###### 分析：
 

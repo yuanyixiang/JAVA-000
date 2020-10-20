@@ -82,4 +82,4 @@ cms主要是使得延迟更低，默认使用cpu的核心线程数四分之一�
 
 内存大的时候使用G1为好
 
-<img src="/Users/rd-yyx/Desktop/java/JAVA-000/JAVA-000/Week_01/src/截屏2020-10-20 下午3.40.39.png" alt="截屏2020-10-20 下午3.40.39" style="zoom:50%;" />
+<img src="./src/jvmCompare.png" alt="截屏2020-10-20 下午3.40.39" style="zoom:50%;" />
