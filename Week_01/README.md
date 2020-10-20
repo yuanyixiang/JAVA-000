@@ -39,3 +39,47 @@
  3、自定义 ClassLoader 加载
  4、拿到当前执行类的 ClassLoader，反射调用 addUrl 方法添加 Jar 或路径(JDK9 无效)。
 
+###### JVM命令行工具
+
+​	jps/jinfo	查看java进程
+
+​	jstat			查看jvm内部gc相关信息
+
+​	jmap			查看heap或类占用统计
+
+​	jstack			查看线程信息
+
+​	jcmd			执行jvm相关分析命令
+
+​	jrunscript/jjs 	执行js命令
+
+###### Jvm图形化工具
+
+jconsole		Avisualvm	jmc		idea插件：visualGC
+
+###### GC
+
+java8默认就是并行gc ParallelGC
+
+###### Parallel
+
+并行垃圾收集器主要考虑吞吐量，在gc期间会STW，gc后业务进程能够对系统资源有效的使用
+
+###### CMS
+
+cms主要是使得延迟更低，默认使用cpu的核心线程数四分之一的线程，主要用于老年代，新生代使用parnew
+
+- 阶段  1: Initial Mark(初始标记)
+- 阶段  2: Concurrent Mark(并发标记)
+- 阶段  3: Concurrent Preclean(并发预清理)
+- 阶段  4: Final Remark(最终标记)
+- 阶段  5: Concurrent Sweep(并发清除)
+- 阶段  6: Concurrent Reset(并发重置)
+
+###### G1
+
+不再分老年代和年轻代而是将整个堆内存分为小的区域，可以根据垃圾多的区域优先收集，延迟较低
+
+内存大的时候使用G1为好
+
+<img src="/Users/rd-yyx/Desktop/java/JAVA-000/JAVA-000/Week_01/src/截屏2020-10-20 下午3.40.39.png" alt="截屏2020-10-20 下午3.40.39" style="zoom:50%;" />
