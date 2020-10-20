@@ -52,7 +52,7 @@ PS Old Generation
 
 jmap -heap pid 
 
-![截屏2020-10-20 下午2.51.35](./parallel.png)
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gjvuswcikxj30n60cqmxs.jpg" alt="截屏2020-10-20 下午2.51.35" style="zoom:50%;" />
 
 ###### 分析：
 
