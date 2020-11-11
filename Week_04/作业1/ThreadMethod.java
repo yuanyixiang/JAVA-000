@@ -11,6 +11,12 @@ public class ThreadMethod {
     private static volatile int result;
 
     public static void main(String[] args) {
+        demo1();
+        demo2();
+        demo3();
+        demo4();
+        demo5();
+        demo6();
         demo7();
     }
     private static void  demo1(){
